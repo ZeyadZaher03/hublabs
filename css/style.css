@@ -22,6 +22,10 @@ h6{
     font-family: 'Raleway', sans-serif;
 }
 
+title{
+    display: inline-block;
+}
+
 /* GENERAL STYLES */
 
 .divide-two-col{
@@ -699,3 +703,15 @@ h6{
     color: #566681;
 }
 
+.big-input-container{
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 3fr;
+
+}
+
+.big-input-title{
+    font-size: 35px;
+    color: #4273FA;
+}
