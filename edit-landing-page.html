@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- FONT AWESOME -->
 	<script src="https://kit.fontawesome.com/c3284027a8.js" crossorigin="anonymous"></script>
@@ -86,7 +87,7 @@
             <div>
                 <div class="one-col">
                     <div class="main-heading-container">
-                        <h2 class="main-heading">Create New Landing Page</h2>
+                        <h2 class="main-heading">Edit Landing Page</h2>
                     </div>
                 </div>
         
@@ -168,6 +169,62 @@
                     </div>
                 </div>
             </div>
+
+            <div class="create-landing-page-container">
+                <div class="one-col glass-container">
+                    <h3 class="glass-container-header ALLLCAPS">Products</h3>
+                    <div class="create-newlanpg-mid-inputs-con">
+                        <div class="mid-input-container">
+                            <title class="mid-input-title mid-input-title-sec" for="product_file">Image</title>
+                            <input type="file" name="product_file" id="product_file" class="mid-input">
+                        </div>
+    
+                        <div class="mid-input-container">
+                            <title class="mid-input-title mid-input-title-sec" for="product-title">Title</title>
+                            <input placeholder="Title" type="text" name="product-title" id="product-title" class="mid-input">
+                        </div>
+    
+                        <div class="mid-input-container">
+                            <title class="mid-input-title mid-input-title-sec" for="product_description">Description</title>
+                            <textarea type="text" name="product_description" id="product_description" class="mid-input"></textarea>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="one-col glass-container">
+                    <h3 class="glass-container-header ALLLCAPS">Form</h3>
+                    <div class="create-newlanpg-mid-inputs-con">
+                        <div class="mid-input-container">
+                            <title class="mid-input-title mid-input-title-sec" for="form_input_lable">Input Label</title>
+                            <input type="text" placeholder="Input Label" name="form_input_lable" id="form_input_lable" class="mid-input">
+                        </div>
+
+                        <div class="mid-input-container">
+                            <title class="mid-input-title mid-input-title-sec" for="form_input_type">Input Type</title>
+                            <input type="text" placeholder="Type" name="form_input_type" id="form_input_type" class="mid-input">
+                        </div>
+    
+                        <div class="mid-input-container">
+                            <title class="mid-input-title mid-input-title-sec" for="form_required_color">Required</title>
+                            <input type="color" class="promocode-color-input" name="form_required_color" id="form_required_color">
+
+                        </div>
+    
+                    </div>
+                </div>
+        
+        
+                <div class="one-col glass-container">
+                    <h3 class="glass-container-header ALLLCAPS">Form</h3>
+                    <div class="create-newlanpg-mid-inputs-con">
+                        <div class="mid-input-container">
+                            <title class="mid-input-title mid-input-title-sec" for="video_URL">Video URL</title>
+                            <input type="text" placeholder="Paste Your video lnk here" name="video_URL" id="video_URL" class="mid-input">
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
     
             <div class="create-landing-page-container">
                 <div class="promocode-color-input-container">
@@ -181,11 +238,12 @@
                 </div>        
 
                 <div class="submit-button-container">
-
+                    
                 </div>
             </div>
         </div>
-        <div class="landing-page-sidenav-new">
+        
+        <div class="landing-page-sidenav-edit">
             
             <div class="landing-page-sidenav-box landing-sidenav_title-container">
                 <h3 class="landing-page-title">Title (font Weight)</h3>
@@ -249,6 +307,37 @@
                 </div>
             </div>
 
+            <div class="landing-page-sidenav-box">
+                <h3 class="landing-page-title">Product Images</h3>
+                <div class="landing-page_product-info-cont">
+                    <div class="landing-page_product-image">
+                        <img src="images/ford.png" alt="">
+                        <p>مفيش طريق صعب علي فورد</p>
+                        <button class="image-close-button"><i class="far fa-times-circle"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="landing-page-sidenav-box">
+                <h3 class="landing-page-title">Form</h3>
+                <div class="landing-page_product-image">
+                    <div class="fake-input-container">
+                        <p class="fake-input-title">Name*</p>
+                        <div class="fake-input"></div>
+                    </div>
+                    <button class="image-close-button"><i class="far fa-times-circle"></i></button>
+                </div>
+            </div>
+            <div class="landing-page-sidenav-box">
+                <h3 class="landing-page-title">Video</h3>
+                <div class="landing-page_videooo">
+                    <img src="images/ford.png" alt="">
+                    <button class="image-close-button"><i class="far fa-times-circle"></i></button>
+                    <div class="play-icon">
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -286,6 +375,7 @@
 
     <script>
         var editor = new FroalaEditor('#example')
+        var editor = new FroalaEditor('#product_description')
     </script>
 
 </body>
