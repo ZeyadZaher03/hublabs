@@ -45,4 +45,3 @@ const promoCodeHandler = () => {
 }
 
 promoCodeHandler() 
-footerVisHandler("side");

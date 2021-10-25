@@ -25,9 +25,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
   
-    <!-- JS -->
-    <script defer src="js/functions.js"></script>
-    <script defer src="js/main.js"></script>
+    
     
     <!-- INFO -->
     <title>Hublabs</title>
@@ -68,9 +66,9 @@
         <div class="navigation_side-menu">
             <h3 class="navigation_side-heading">Menu</h3>
             <div class="navigation_side-menu-links">
-                <a class="navigation_side-menu-link navigation_side-menu-link--active" href="#">Home</a>
-                <a class="navigation_side-menu-link" href="#">Analytics</a>
-                <a class="navigation_side-menu-link" href="#">Promo Code</a>
+                <a class="navigation_side-menu-link navigation_side-menu-link--active" href="/index.html">Home</a>
+                <a class="navigation_side-menu-link" href="/analytics.html">Analytics</a>
+                <a class="navigation_side-menu-link" href="/promo-codes.html">Promo Code</a>
                 <a class="navigation_side-menu-link" href="#">Achivements</a>
                 <a class="navigation_side-menu-link" href="#">Team</a>
                 <a class="navigation_side-menu-link" href="#">New Campaign</a>
@@ -112,7 +110,6 @@
                 <div class="search_hero-input-container">
                     <input type="text" placeholder="Search Promo Code" class="search-hero-input">
                     <buttom type="text" class="search-hero-button"><i class="fas fa-search"></i> Search</buttom>
-
                 </div>
             </div>
         </div>
@@ -128,22 +125,22 @@
                         <p>Date</p>
                         <p>Time</p>
                     </div>
-                    <a href="#" class="campaigns-item">
+                    <a href="analytics.html" class="campaigns-item">
                         <p><i class="fas fa-circle"></i> Tesla</p>
                         <p>22/2/2022</p>
                         <p>6:00pm</p>
                     </a>
-                    <a href="#" class="campaigns-item">
+                    <a href="analytics.html" class="campaigns-item">
                         <p><i class="fas fa-circle"></i> Tesla</p>
                         <p>22/2/2022</p>
                         <p>6:00pm</p>
                     </a>
-                    <a href="#" class="campaigns-item">
+                    <a href="analytics.html" class="campaigns-item">
                         <p><i class="fas fa-circle"></i> Tesla</p>
                         <p>22/2/2022</p>
                         <p>6:00pm</p>
                     </a>
-                    <a href="#" class="campaigns-item">
+                    <a href="analytics.html" class="campaigns-item">
                         <p><i class="fas fa-circle"></i> Tesla</p>
                         <p>22/2/2022</p>
                         <p>6:00pm</p>
@@ -194,8 +191,20 @@
         </div>
     </footer>
 
+    <!-- JS -->
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
     <script>
         footerVisHandler("main");
+        const promoCodeSearchHandler= ()=>{
+            const promoCodeSearchButton = document.querySelector(".search-hero-button")
+            const promoCodeSearchInput = document.querySelector(".search-hero-input")
+            promoCodeSearchButton.addEventListener("click",()=>{
+                const promoCodeSearchValue = promoCodeSearchInput.value.trim()
+                window.location.href = `/promo-codes.html?promoCode=${promoCodeSearchValue}`
+            })
+        }
+        promoCodeSearchHandler()
     </script>
 </body>
 </html>

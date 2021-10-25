@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+	<script src="https://kit.fontawesome.com/c3284027a8.js" crossorigin="anonymous"></script>
+    
+    <!-- ANIMATE.CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- ANIME.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css"/>
+    <link rel="stylesheet" href="assets/custom-select/select.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    <!-- INFO -->
+    <title>Hublabs</title>
+</head>
+<body>
+
+    <div class="navigation_top navigation_top-alt">
+        <div class="navigation_top-logo">
+            <h1>THE HUB . LABS</h1>
+        </div>
+        <div class="navigation_top-details">
+            <p class="navigation_top-type" >Campaign</p>
+            <select class="navigation_top-select">
+                <option value="#">Test One</option>
+                <option value="#"></option>
+                <option value="#"></option>
+            </select>
+            <button class="navigation_top-button">New Campaign</button>
+            <button class="navigation_top-settingicon">
+                <i class="fas fa-cog"></i>
+                <div class="settings-dropdown">
+                    <h3 class="settings-dropdown-heading"><i class="fas fa-globe"></i> Language</h3>
+                    <h3 class="settings-dropdown-heading"><i class="far fa-object-ungroup"></i> Password</h3>
+                    <h3 class="settings-dropdown-heading"><i class="fas fa-unlock"></i> Export Screenshots</h3>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <div class="navigation_side navigation_side--alt">
+        <div class="navigation_side-user-info">
+            <div class="navigation_side-user-logo">
+                <img src="images/ford.png" alt="Company Icon">
+            </div>
+            <p class="navigation_side-user-co">Ford Motor Company</p>
+            <p class="navigation_side-user-name">Zeyad Mohamed</p>
+        </div>
+        <div class="navigation_side-menu">
+            <h3 class="navigation_side-heading">Menu</h3>
+            <div class="navigation_side-menu-links">
+                <a class="navigation_side-menu-link" href="/index.html">Home</a>
+                <a class="navigation_side-menu-link" href="/analytics.html">Analytics</a>
+                <a class="navigation_side-menu-link navigation_side-menu-link--active" href="/promo-codes.html">Promo Code</a>
+                <a class="navigation_side-menu-link" href="#">Achivements</a>
+                <a class="navigation_side-menu-link" href="#">Team</a>
+                <a class="navigation_side-menu-link" href="#">New Campaign</a>
+            </div>
+        </div>
+        <button class="navigation_side-menu-logout">Log Out</button>
+    </div>
+
+    <div class="wrapper">
+        <div class="one-col">
+            <div class="leads-heading">
+                <div class="leads-header-container">
+                    <h1 class="leads-header">Leads</h1>
+                </div>
+                <div class="leads-details">
+                    <div>
+                        <div class="search-main-style-container search-main-style-container-sm"> 
+                            <input type="text" placeholder="Search Promo Code" class="search-main-style" id="promo-code-input">
+                            <button class="search-main-style-button"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="leads-select-search">
+                        <select name="campaign" id="campaign">
+                            <option value="campaign">Campaign</option>
+                            <option value="campaign">Campaign</option>
+                            <option value="campaign">Campaign</option>
+                            <option value="campaign">Campaign</option>
+                            <option value="campaign">Campaign</option>
+                        </select>
+                        <select name="date" id="date">
+                            <option value="2020-09-09">2020-09-09</option>
+                        </select>
+                        <select name="city" id="city">
+                            <option value="Egypt">Egypt</option>
+                        </select>
+                        <select name="Phone" id="phone">
+                            <option value="phone">Phone</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="one-col leads-container">
+            <div class="leads-list-refrence">
+                <p>Name</p>
+                <p>Phone</p>
+                <p>City</p>
+                <p>Email</p>
+                <p>UTM_CAMPAIGN</p>
+                <p>UTM_SOURCE</p>
+                <p>UTM_MEDIUM</p>
+                <p>Date</p>
+                <p>Time</p>
+                <button class="leads-export-ref">
+                    <p class="leads-export-ref-name">Export</p>
+                    <i class="fas fa-file-export"></i>
+                </button>
+                <div class="export-popout">
+                    <div class="export-leads-options">
+                        <p class="export-leads-option">Today</p>
+                        <p class="export-leads-option">Yesterday</p>
+                        <p class="export-leads-option">7 Last Day</p>
+                        <p class="export-leads-option">Current Month</p>
+                        <p class="export-leads-option">Last Month</p>
+                        <p class="export-leads-option">Specific Date</p>
+                        <p class="export-leads-option export-leads-option--selected">Specific Range</p>
+                        <p class="export-leads-option export-leads-option_export-all">Export All</p>
+                    </div>
+                    <div class="leads-export-date">
+                        <div class="leads-export-datepicker-container">
+                            <input type="date" id="datepicker"/>
+                        </div>
+                        <div class="leads-export-time">
+                            <div class="leads-export-time-first">
+                                <input type="time" name="" id="">
+                                <div class="AM-PM-Export">
+                                    <div>
+                                        <input type="radio" name="amF" id="amF">
+                                        <label for="amF">AM</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="pmF" id="pmF">
+                                        <label for="pmF">PM</label>
+                                    </div>
+                                </div>
+                                <button class="set-to-now-export">Set to now</button>
+                            </div>
+                            <div class="leads-export-time-sec">
+                                <input type="time" name="" id="">
+                                <div class="AM-PM-Export">
+                                    <div>
+                                        <input type="radio" name="amF" id="amF">
+                                        <label for="amS">AM</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="pmF" id="pmF">
+                                        <label for="pmS">PM</label>
+                                    </div>
+                                </div>
+                                <button class="set-to-now-export">Set to now</button>
+                            </div>
+                        </div>
+                        <div class="leads-export-actions">
+                            <button class="leads-export-button-cancel">Cancel</button>
+                            <button class="leads-export-button-green">Export</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leads-item-container">
+                <p class="leads-name">Zeyad</p>
+                <p class="leads-phone">01027778888</p>
+                <p class="leads-city">Egypt</p>
+                <p class="leads-email">zeaydzaher@gmail.com</p>
+                <p class="leads-UTM_CAMPAIGN">Ford Focus 2021 Revea</p>
+                <p class="leads-UTM_SOURCE">Hatla2ee</p>
+                <p class="leads-UTM_MEDIUM">Sticky Bar</p>
+                <p class="leads-Date">2021-03-17</p>
+                <p class="leads-time">00:48 49</p>
+                <div class="leads-export">
+                    <button class="leads-remove-button">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="leads-item-container">
+                <p class="leads-name">Zeyad</p>
+                <p class="leads-phone">01027778888</p>
+                <p class="leads-city">Egypt</p>
+                <p class="leads-email">zeaydzaher@gmail.com</p>
+                <p class="leads-UTM_CAMPAIGN">Ford Focus 2021 Revea</p>
+                <p class="leads-UTM_SOURCE">Hatla2ee</p>
+                <p class="leads-UTM_MEDIUM">Sticky Bar</p>
+                <p class="leads-Date">2021-03-17</p>
+                <p class="leads-time">00:48 49</p>
+                <div class="leads-export">
+                    <button class="leads-remove-button">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="leads-item-container">
+                <p class="leads-name">Zeyad</p>
+                <p class="leads-phone">01027778888</p>
+                <p class="leads-city">Egypt</p>
+                <p class="leads-email">zeaydzaher@gmail.com</p>
+                <p class="leads-UTM_CAMPAIGN">Ford Focus 2021 Revea</p>
+                <p class="leads-UTM_SOURCE">Hatla2ee</p>
+                <p class="leads-UTM_MEDIUM">Sticky Bar</p>
+                <p class="leads-Date">2021-03-17</p>
+                <p class="leads-time">00:48 49</p>
+                <div class="leads-export">
+                    <button class="leads-remove-button">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="leads-item-container">
+                <p class="leads-name">Zeyad</p>
+                <p class="leads-phone">01027778888</p>
+                <p class="leads-city">Egypt</p>
+                <p class="leads-email">zeaydzaher@gmail.com</p>
+                <p class="leads-UTM_CAMPAIGN">Ford Focus 2021 Revea</p>
+                <p class="leads-UTM_SOURCE">Hatla2ee</p>
+                <p class="leads-UTM_MEDIUM">Sticky Bar</p>
+                <p class="leads-Date">2021-03-17</p>
+                <p class="leads-time">00:48 49</p>
+                <div class="leads-export">
+                    <button class="leads-remove-button">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="leads-item-container">
+                <p class="leads-name">Zeyad</p>
+                <p class="leads-phone">01027778888</p>
+                <p class="leads-city">Egypt</p>
+                <p class="leads-email">zeaydzaher@gmail.com</p>
+                <p class="leads-UTM_CAMPAIGN">Ford Focus 2021 Revea</p>
+                <p class="leads-UTM_SOURCE">Hatla2ee</p>
+                <p class="leads-UTM_MEDIUM">Sticky Bar</p>
+                <p class="leads-Date">2021-03-17</p>
+                <p class="leads-time">00:48 49</p>
+                <div class="leads-export">
+                    <button class="leads-remove-button">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="glass-slider">
+                <button class="glass-slider-button glass-slider-button--dis"><i class="fas fa-chevron-left"></i></button>
+                <p class="glass-slider-box">1</p>
+                <p class="glass-slider-text">of</p>
+                <p class="glass-slider-box">6</p>
+                <button class="glass-slider-button"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+        </div>
+
+        
+        
+    </div>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <h2>THEHUB . LABS</h2>
+        </div>
+        <div class="footer-list">
+            <p class="footer-list-heading">Home</p>
+            <a  href="#" class="footer-list-link">Help Center</a>
+            <a  href="#" class="footer-list-link">Security</a>
+            <a  href="#" class="footer-list-link">Customer Service</a>
+            <a  href="#" class="footer-list-link">Contacts</a>
+        </div>
+        <div class="footer-list">
+            <p class="footer-list-heading">Legals</p>
+            <a  href="#" class="footer-list-link">Licence</a>
+            <a  href="#" class="footer-list-link">Refund Policy</a>
+            <a  href="#" class="footer-list-link">About Us</a>
+            <a  href="#" class="footer-list-link">Contacts</a>
+        </div>
+        <div class="footer-list">
+            <p class="footer-list-heading">Company</p>
+            <a  href="#" class="footer-list-link">Help Center</a>
+            <a  href="#" class="footer-list-link">Security</a>
+            <a  href="#" class="footer-list-link">Customer Service</a>
+        </div>
+        <div class="footer-action">
+            <div class="footer-message">
+                <i class="fas fa-comments"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SELECT -->
+    <script src="assets/custom-select/select.js" ></script>
+
+    <!-- Calendar -->
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+
+    <!-- JS -->
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        footerVisHandler("side");
+        new Select(document.querySelector("#campaign"),"leads")
+        new Select(document.querySelector("#date"),"leads")
+        new Select(document.querySelector("#city"),"leads")
+        new Select(document.querySelector("#phone"),"leads")
+
+        new Litepicker({
+            element: document.getElementById('datepicker'),
+            singleMode: false,
+            numberOfColumns: 2,
+            numberOfMonths:2,
+            tooltipText: {
+                one: 'night',
+                other: 'nights'
+            },
+            tooltipNumber: (totalDays) => {
+                return totalDays - 1;
+            }
+        })
+
+        const exportHandler = () => {
+            const leadsExportButton = document.querySelector(".leads-export-ref")
+            const leadsExportPopUp = document.querySelector(".export-popout")
+            const leadsExportCalendar = document.querySelector(".litepicker")
+
+            leadsExportButton.addEventListener("click",()=>{
+                leadsExportPopUp.classList.toggle("export-popout-show")
+                leadsExportCalendar.classList.toggle("litepicker-show")
+            })
+        }
+        exportHandler()
+    </script>
+</body>
+</html>

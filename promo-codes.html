@@ -25,10 +25,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
   
-    <!-- JS -->
-    <script defer src="js/functions.js"></script>
-    <script defer src="js/main.js"></script>
-    <script defer src="js/promoCode.js"></script>
+    
     
     <!-- INFO -->
     <title>Hublabs</title>
@@ -46,14 +43,14 @@
                 <option value="#"></option>
             </select>
             <button class="navigation_top-button">New Campaign</button>
-            <!-- <button class="navigation_top-settingicon"> -->
-                <!-- <i class="fas fa-cog"></i> -->
-                <!-- <div class="settings-dropdown"> -->
-                    <!-- <h3 class="settings-dropdown-heading"><i class="fas fa-globe"></i> Language</h3> -->
-                    <!-- <h3 class="settings-dropdown-heading"><i class="far fa-object-ungroup"></i> Password</h3> -->
-                    <!-- <h3 class="settings-dropdown-heading"><i class="fas fa-unlock"></i> Export Screenshots</h3> -->
-                <!-- </div> -->
-            <!-- </button> -->
+            <button class="navigation_top-settingicon">
+                <i class="fas fa-cog"></i>
+                <div class="settings-dropdown">
+                    <h3 class="settings-dropdown-heading"><i class="fas fa-globe"></i> Language</h3>
+                    <h3 class="settings-dropdown-heading"><i class="far fa-object-ungroup"></i> Password</h3>
+                    <h3 class="settings-dropdown-heading"><i class="fas fa-unlock"></i> Export Screenshots</h3>
+                </div>
+            </button>
         </div>
     </div>
 
@@ -68,9 +65,9 @@
         <div class="navigation_side-menu">
             <h3 class="navigation_side-heading">Menu</h3>
             <div class="navigation_side-menu-links">
-                <a class="navigation_side-menu-link navigation_side-menu-link--active" href="#">Home</a>
-                <a class="navigation_side-menu-link" href="#">Analytics</a>
-                <a class="navigation_side-menu-link" href="#">Promo Code</a>
+                <a class="navigation_side-menu-link" href="/index.html">Home</a>
+                <a class="navigation_side-menu-link" href="/analytics.html">Analytics</a>
+                <a class="navigation_side-menu-link navigation_side-menu-link--active" href="/promo-codes.html">Promo Code</a>
                 <a class="navigation_side-menu-link" href="#">Achivements</a>
                 <a class="navigation_side-menu-link" href="#">Team</a>
                 <a class="navigation_side-menu-link" href="#">New Campaign</a>
@@ -82,7 +79,7 @@
     <div class="wrapper">
         <div class="one-col">
             <div class="search-promo-code-container search-main-style-container">
-                <input type="text" placeholder="Search Promo Code" class="search-main-style">
+                <input type="text" placeholder="Search Promo Code" class="search-main-style" id="promo-code-input">
                 <button class="search-main-style-button"><i class="fas fa-search"></i></button>
             </div>
         </div>
@@ -234,5 +231,22 @@
             </div>
         </div>
     </footer>
+
+    <!-- JS -->
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/promoCode.js"></script>
+    <script>
+        footerVisHandler("side");
+        // const 
+        const promoCodeSearchHandler = ()=>{
+            const params = new URLSearchParams(location.search);
+            const promoCodeSearchValue =params.get('promoCode')
+            const promoCodeInput = document.querySelector("#promo-code-input")
+            promoCodeInput.value = promoCodeSearchValue
+
+        }
+        promoCodeSearchHandler()
+    </script>
 </body>
 </html>

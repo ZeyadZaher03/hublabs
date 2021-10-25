@@ -96,3 +96,69 @@ const navSettingsHandler = () => {
     // code here later ...
   });
 }
+
+const circledProgressBar = (selector,precent, duration) => {
+  const constNumberHandler = (time) => {
+
+    // if the element is not available
+    const numb = document.querySelector(`${selector} .crcl-prg-num`);
+    if (!numb) return;
+
+    let counter = 0;
+    setInterval(() => {
+      if (counter == precent) clearInterval();
+      else {
+        counter += 1;
+        numb.textContent = counter + "%";
+      }
+    }, (time/precent)-2);
+  };
+
+  const getPercentatge = () => {
+    const leftPart = document.querySelector(`${selector} .circle .left .progress`);
+    const rightPart = document.querySelector(
+      `${selector} .circle .right .progress`
+    );
+    const percentatge = Math.round((precent * 360) / 100);
+
+    if (percentatge > 180) {
+      const leftPartDuration = Math.round((180 * duration) / 360);
+      const rightPartDuration = Math.round(
+        (-(180 - percentatge) * duration) / 360
+      );
+
+      anime({
+        targets: leftPart,
+        rotate: 180,
+        easing: "linear",
+        duration: leftPartDuration,
+      });
+
+      anime({
+        targets: rightPart,
+        rotate: -(180 - percentatge),
+        easing: "linear",
+        delay: leftPartDuration,
+        duration: rightPartDuration,
+      });
+
+      constNumberHandler(leftPartDuration+rightPartDuration);
+
+    } else if (percentatge <= 180) {
+      
+      const leftPartDuration = Math.round((percentatge * duration) / 360);
+      
+      anime({
+        targets: leftPart,
+        rotate: percentatge,
+        easing: "linear",
+        duration: leftPartDuration,
+      });
+
+      constNumberHandler(leftPartDuration);
+    }
+  };
+
+  getPercentatge();
+};
+

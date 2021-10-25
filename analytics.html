@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+	<script src="https://kit.fontawesome.com/c3284027a8.js" crossorigin="anonymous"></script>
+    
+    <!-- ANIMATE.CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- ANIME.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+  
+
+    
+    <!-- INFO -->
+    <title>Hublabs</title>
+</head>
+<body>
+    <div class="modal-main">
+        <div class="modal-main-container">
+            <h3 class="modal-main-heading">Your Qoute Has Expired,</h3>
+            <p class="modal-main-text">Click <a href="#" class="accept-color">Renew</a> if you want to Countinue this campaigne,or <br>
+            Click <a href="#" class="danger-color">Sign off</a> if you won't subscribe to this campaigne</p>
+            <div class="modal-main-actions">
+                <button class="accept-button button-style">Renew</button>
+                <button class="danger-button button-style">Sign Off</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation_top navigation_top">
+        <div class="navigation_top-logo">
+            <h1>THE HUB . LABS</h1>
+        </div>
+        <div class="navigation_top-details">
+            <p class="navigation_top-type" >Campaign</p>
+            <select class="navigation_top-select">
+                <option value="#">Test One</option>
+                <option value="#"></option>
+                <option value="#"></option>
+            </select>
+            <button class="navigation_top-button">New Campaign</button>
+            <butt/on class="navigation_top-settingicon">
+                <i class="fas fa-cog"></i>
+                <div class="settings-dropdown">
+                    <h3 class="settings-dropdown-heading"><i class="fas fa-globe"></i> Language</h3>
+                    <h3 class="settings-dropdown-heading"><i class="far fa-object-ungroup"></i> Password</h3>
+                    <h3 class="settings-dropdown-heading"><i class="fas fa-unlock"></i> Export Screenshots</h3>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <div class="navigation_side navigation_side">
+        <div class="navigation_side-user-info">
+            <div class="navigation_side-user-logo">
+                <img src="images/ford.png" alt="Company Icon">
+            </div>
+            <p class="navigation_side-user-co">Ford Motor Company</p>
+            <p class="navigation_side-user-name">Zeyad Mohamed</p>
+        </div>
+        <div class="navigation_side-menu">
+            <h3 class="navigation_side-heading">Menu</h3>
+            <div class="navigation_side-menu-links">
+                <a class="navigation_side-menu-link navigation_side-menu-link--active" href="#">Home</a>
+                <a class="navigation_side-menu-link" href="#">Analytics</a>
+                <a class="navigation_side-menu-link" href="#">Promo Code</a>
+                <a class="navigation_side-menu-link" href="#">Achivements</a>
+                <a class="navigation_side-menu-link" href="#">Team</a>
+                <a class="navigation_side-menu-link" href="#">New Campaign</a>
+            </div>
+        </div>
+        <button class="navigation_side-menu-logout">Log Out</button>
+    </div>
+
+    <div class="wrapper">
+        <!-- <div class="one-col">
+            <div class="main-heading-container">
+                <div class="main-heading main-heading--big black">Total Leading vs Qualified Leads</div>
+            </div>
+        </div> -->
+
+        <div class="grid-3-2 margin-t-40">
+            <!-- ROW 1 START -->
+            <!-- ANALYTIC BOXES -->
+            <div class="num-analytics-container">
+                <div class="num-analytics-item" id="users-analytics-box">
+                    <p class="num-analytics-value">1234</p>
+                    <p class="num-analytics-name">Users</p>
+                </div>
+                
+                <div class="num-analytics-item" id="new-users-analytics-box">
+                    <p class="num-analytics-value">123</p>
+                    <p class="num-analytics-name">New Users</p>
+                </div>
+                
+                <div class="num-analytics-item" id="session-analytics-box">
+                    <p class="num-analytics-value">9</p>
+                    <p class="num-analytics-name">Session</p>
+                </div>
+                
+                <div class="num-analytics-item" id="total-leads-analytics-box">
+                    <p class="num-analytics-value">120</p>
+                    <p class="num-analytics-name">Total Leads</p>
+                </div>
+            </div>
+
+            <!-- SUBSCRIPTON TIME -->
+            <div class="date-container">
+                <div class="date-track-container">
+                    <div class="date-track-item" id="days-TT-box">
+                        <p class="date-track-num">27</p>
+                        <p class="date-track-type">Days</p>
+                    </div>
+                    <div class="date-track-item" id="hours-TT-box">
+                        <p class="date-track-num">12</p>
+                        <p class="date-track-type">Hours</p>
+                    </div>
+                    <div class="date-track-item" id="minutes-TT-box">
+                        <p class="date-track-num">33</p>
+                        <p class="date-track-type">Minutes</p>
+                    </div>
+                    <div class="date-track-item" id="seconds-TT-box">
+                        <p class="date-track-num">45</p>
+                        <p class="date-track-type">Seconds</p>
+                    </div>
+                </div>
+
+                <div class="date-details-container">
+                    <div class="date-details-item">
+                        <p class="date-details-name">Start Date:</p>
+                        <p class="date-details-value">1 Jan 2021</p>
+                    </div>
+                    
+                    <div class="date-details-item">
+                        <p class="date-details-name">Expire Date:</p>
+                        <p class="date-details-value">30 Jan 2021</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ROW 1 END -->
+            
+            
+            <!-- ROW 2 START -->
+            <!-- SUMMARY BOX -->
+            <div class="glass-container glass-container--smpd summary-box">
+                <div class="glass-header">
+                    <h3 class="glass-heading-main">Summary</h3>
+                    <div class="summary-date">
+                        <i class="fas fa-clock"></i>
+                        <p>Last week</p>
+
+                    </div>
+                </div>
+                <div class="summary-data">
+                    <canvas id="myChart" ></canvas>
+                </div>
+            </div>
+            
+            <!-- LEADS BOX-->
+            <div class="glass-container glass-container--smpd leads-box">
+                <div class="glass-header">
+                    <h3 class="glass-heading-main">Leads</h3>
+                    <a href="#" class="showAll">Show All</a>
+                </div>
+                <div class="leads-list">
+                    <div class="leads-list-item leads-list-item-refrence">
+                        <p>Name</p>
+                        <p>Phone</p>
+                        <p>City</p>
+                        <p>Email</p>
+                    </div>
+                    <div class="leads-list-item">
+                        <p class="leads-item-name">Zeyad</p>
+                        <p class="leads-item-phone">01077771111</p>
+                        <p class="leads-item-city">Alexandria</p>
+                        <p class="leads-item-mail">zeyadzaher@gmail....</p>
+                    </div>
+                    <div class="leads-list-item">
+                        <p class="leads-item-name">Zeyad</p>
+                        <p class="leads-item-phone">01077771111</p>
+                        <p class="leads-item-city">Alexandria</p>
+                        <p class="leads-item-mail">zeyadzaher@gmail....</p>
+                    </div>
+                    <div class="leads-list-item">
+                        <p class="leads-item-name">Zeyad</p>
+                        <p class="leads-item-phone">01077771111</p>
+                        <p class="leads-item-city">Alexandria</p>
+                        <p class="leads-item-mail">zeyadzaher@gmail....</p>
+                    </div>
+                    <div class="leads-list-item">
+                        <p class="leads-item-name">Zeyad</p>
+                        <p class="leads-item-phone">01077771111</p>
+                        <p class="leads-item-city">Alexandria</p>
+                        <p class="leads-item-mail">zeyadzaher@gmail....</p>
+                    </div>
+                    <div class="leads-list-item">
+                        <p class="leads-item-name">Zeyad</p>
+                        <p class="leads-item-phone">01077771111</p>
+                        <p class="leads-item-city">Alexandria</p>
+                        <p class="leads-item-mail">zeyadzaher@gmail....</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ROW 2 END -->
+
+            
+            <!-- ROW 3 START -->
+            <!-- CAMPAIGNS BOX -->
+            <div class="glass-container glass-container--smpd campaigne-box">
+                <div class="glass-header">
+                    <h3 class="glass-heading-main">Campaigns</h3>
+                    <div class="glass-header-icon">
+                        <button class="button-icon campaigne-seeting-button">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="campagine-list">
+                    <div class="campagine-list-item campagine-list-item-refrence">
+                        <p>Source/Medium</p>
+                        <p>Users</p>
+                        <p>New Users</p>
+                        <p>Sessions</p>
+                        <p>Total Leads</p>
+                        <p>CTR</p>
+                    </div>
+                    <div class="campagine-list-item">
+                        <p class="campagine-item-source">Facebook</p>
+                        <p class="campagine-item-users">123</p>
+                        <p class="campagine-item-new-users">7</p>
+                        <p class="campagine-item-sessions">9</p>
+                        <p class="campagine-item-total-leads"  id="users-analytics-box">180</p>
+                        <p class="campagine-item-CTR">20%</p>
+                    </div>
+                    <div class="campagine-list-item">
+                        <p class="campagine-item-source">Facebook</p>
+                        <p class="campagine-item-users">123</p>
+                        <p class="campagine-item-new-users">7</p>
+                        <p class="campagine-item-sessions">9</p>
+                        <p class="campagine-item-total-leads"  id="users-analytics-box">180</p>
+                        <p class="campagine-item-CTR">20%</p>
+                    </div>
+                    <div class="campagine-list-item">
+                        <p class="campagine-item-source">Facebook</p>
+                        <p class="campagine-item-users">123</p>
+                        <p class="campagine-item-new-users">7</p>
+                        <p class="campagine-item-sessions">9</p>
+                        <p class="campagine-item-total-leads"  id="users-analytics-box">180</p>
+                        <p class="campagine-item-CTR">20%</p>
+                    </div>
+                    <div class="campagine-list-item">
+                        <p class="campagine-item-source">Facebook</p>
+                        <p class="campagine-item-users">123</p>
+                        <p class="campagine-item-new-users">7</p>
+                        <p class="campagine-item-sessions">9</p>
+                        <p class="campagine-item-total-leads"  id="users-analytics-box">180</p>
+                        <p class="campagine-item-CTR">20%</p>
+                    </div>
+                    <div class="campagine-list-item">
+                        <p class="campagine-item-source">Facebook</p>
+                        <p class="campagine-item-users">123</p>
+                        <p class="campagine-item-new-users">7</p>
+                        <p class="campagine-item-sessions">9</p>
+                        <p class="campagine-item-total-leads"  id="users-analytics-box">180</p>
+                        <p class="campagine-item-CTR">20%</p>
+                    </div>
+                    <div class="campagine-list-item">
+                        <p class="campagine-item-source">Facebook</p>
+                        <p class="campagine-item-users">123</p>
+                        <p class="campagine-item-new-users">7</p>
+                        <p class="campagine-item-sessions">9</p>
+                        <p class="campagine-item-total-leads"  id="users-analytics-box">180</p>
+                        <p class="campagine-item-CTR">20%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAHNNEL BOX -->
+            <div class="glass-container glass-container--smpd channel-box">
+                <div class="glass-header">
+                    <h3 class="glass-heading-main">Channel</h3>
+                    <div class="glass-header-icon">
+                        <button class="button-icon campaigne-seeting-button">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="channel-list">
+                    <div class="channel-list-item channel-list-item-refrence">
+                        <p>Channel Name</p>
+                        <p>Budget</p>
+                        <p>Actual Cost</p>
+                        <p>Leads/ Qualified</p>
+                    </div>
+                    <div class="channel-list-item">
+                        <a href="#" class="channel-item-channel-name">Facebook/ Promoted Posts (EGP)</a>
+                        <p class="channel-item-budget">44,500.00</p>
+                        <p class="channel-item-actual-cost">44,500.00</p>
+                        <p class="channel-item-leads-qualified">3/0</p>
+                    </div>
+                    <div class="channel-list-item">
+                        <a href="#" class="channel-item-channel-name">Facebook/ Promoted Posts (EGP)</a>
+                        <p class="channel-item-budget">44,500.00</p>
+                        <p class="channel-item-actual-cost">44,500.00</p>
+                        <p class="channel-item-leads-qualified">3/0</p>
+                    </div>
+                    <div class="channel-list-item">
+                        <a href="#" class="channel-item-channel-name">Facebook/ Promoted Posts (EGP)</a>
+                        <p class="channel-item-budget">44,500.00</p>
+                        <p class="channel-item-actual-cost">44,500.00</p>
+                        <p class="channel-item-leads-qualified">3/0</p>
+                    </div>
+                    <div class="channel-list-item">
+                        <a href="#" class="channel-item-channel-name">Facebook/ Promoted Posts (EGP)</a>
+                        <p class="channel-item-budget">44,500.00</p>
+                        <p class="channel-item-actual-cost">44,500.00</p>
+                        <p class="channel-item-leads-qualified">3/0</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ROW 3 END -->
+
+            <!-- ROW 4 START -->
+            <div class="grid-3-2-2">
+                <div class="glass-container glass-container--smpd percentage-box percent1">
+                    <div class="glass-header">
+                        <h3 class="glass-heading-main-sm">What got you the highest leads ?</h3>
+                    </div>
+
+                    <div class="circular">
+                    <div class="inner"></div>
+                    <div class="crcl-prg-num">100%</div>
+                    <div class="circle">
+                        <div class="bar left">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="bar right">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    </div>
+                    <p class="precentage-box-txt"><i class="fas fa-circle"></i> Instagram</p>
+                </div>
+
+                <div class="glass-container glass-container--smpd percentage-box percent2">
+                    <div class="glass-header">
+                        <h3 class="glass-heading-main-sm">Channels-Actual cost per lead</h3>
+                    </div>
+
+                    <div class="circular">
+                    <div class="inner"></div>
+                    <div class="crcl-prg-num">100%</div>
+                    <div class="circle">
+                        <div class="bar left">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="bar right">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    </div>
+                    <p class="precentage-box-txt"><i class="fas fa-circle"></i> Desktop</p>
+                </div>
+                
+                <div class="glass-container glass-container--smpd percentage-box percent3">
+                    <div class="glass-header">
+                        <h3 class="glass-heading-main-sm">Channels-Budget</h3>
+                    </div>
+
+                    <div class="circular">
+                    <div class="inner"></div>
+                    <div class="crcl-prg-num">100%</div>
+                    <div class="circle">
+                        <div class="bar left">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="bar right">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    </div>
+                    <p class="precentage-box-txt"><i class="fas fa-circle"></i> Desktop</p>
+                </div>
+            </div>
+            <div class="glass-container glass-container--smpd map-container">
+                <div class="map-box">
+                    <div class="glass-header">
+                        <h3 class="glass-heading-main-sm">Map</h3>
+                    </div>
+                    <div class="world-image-container">
+                        <img class="world-image" src="https://simplemaps.com/static/demos/resources/svg-library/svgs/world.svg" alt="world image">
+                    </div>
+                </div>
+                <div class="countries-box">
+                    <div class="glass-header">
+                        <h3 class="glass-heading-main-sm">Countries</h3>
+                    </div>
+
+                    <div class="countries-box-item">
+                        <div class="countries-box-item-details">
+                            <div class="countries-box-item-map">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1280px-Flag_of_Australia_%28converted%29.svg.png" alt="">
+                            </div>
+                            <p class="countries-box-item-name">Australia</p>
+                        </div>
+                        <p class="countries-box-item-value">100 Users</p>
+                    </div>
+                    <div class="countries-box-item">
+                        <div class="countries-box-item-details">
+                            <div class="countries-box-item-map">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1280px-Flag_of_Australia_%28converted%29.svg.png" alt="">
+                            </div>
+                            <p class="countries-box-item-name">Australia</p>
+                        </div>
+                        <p class="countries-box-item-value">100 Users</p>
+                    </div>
+                    <div class="countries-box-item">
+                        <div class="countries-box-item-details">
+                            <div class="countries-box-item-map">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1280px-Flag_of_Australia_%28converted%29.svg.png" alt="">
+                            </div>
+                            <p class="countries-box-item-name">Australia</p>
+                        </div>
+                        <p class="countries-box-item-value">100 Users</p>
+                    </div>
+                    <div class="countries-box-item">
+                        <div class="countries-box-item-details">
+                            <div class="countries-box-item-map">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1280px-Flag_of_Australia_%28converted%29.svg.png" alt="">
+                            </div>
+                            <p class="countries-box-item-name">Australia</p>
+                        </div>
+                        <p class="countries-box-item-value">100 Users</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ROW 4 END -->
+
+        </div>
+    
+        
+    </div>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <h2>THEHUB . LABS</h2>
+        </div>
+        <div class="footer-list">
+            <p class="footer-list-heading">Home</p>
+            <a  href="#" class="footer-list-link">Help Center</a>
+            <a  href="#" class="footer-list-link">Security</a>
+            <a  href="#" class="footer-list-link">Customer Service</a>
+            <a  href="#" class="footer-list-link">Contacts</a>
+        </div>
+        <div class="footer-list">
+            <p class="footer-list-heading">Legals</p>
+            <a  href="#" class="footer-list-link">Licence</a>
+            <a  href="#" class="footer-list-link">Refund Policy</a>
+            <a  href="#" class="footer-list-link">About Us</a>
+            <a  href="#" class="footer-list-link">Contacts</a>
+        </div>
+        <div class="footer-list">
+            <p class="footer-list-heading">Company</p>
+            <a  href="#" class="footer-list-link">Help Center</a>
+            <a  href="#" class="footer-list-link">Security</a>
+            <a  href="#" class="footer-list-link">Customer Service</a>
+        </div>
+        <div class="footer-action">
+            <div class="footer-message">
+                <i class="fas fa-comments"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script  src="js/functions.js"></script>
+    <script  src="js/main.js"></script>
+    <script  src="js/promoCode.js"></script>
+    <script>
+        circledProgressBar(".percent1", 20, 2000);
+        circledProgressBar(".percent2", 50, 2000);
+        circledProgressBar(".percent3", 70, 2000);
+        footerVisHandler("main");
+
+        const analyticsChart = () => {
+            const ctx = document.getElementById('myChart').getContext('2d');
+            const myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat',"Sun"],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3,11],
+                        backgroundColor: [
+                            'rgb(255, 99, 132)',
+                            'rgb(54, 162, 235)',
+                            'rgb(255, 206, 86)',
+                            'rgb(75, 192, 192)',
+                            'rgb(153, 102, 255)',
+                            'rgb(255, 159, 64)'
+                        ],
+                        borderRadius: 10,
+                        
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+        analyticsChart()
+
+        const ExpiredQouta = ()=>{
+            const dateContainer = document.querySelector(".date-container")
+            const modal = document.querySelector(".modal-main")
+            const body = document.querySelector("body")
+
+            dateContainer.addEventListener("click",()=>{
+                modal.style.display = "flex"
+                body.classList.add("body-lock")
+                console.log(body)
+                anime({
+                    targets:modal,
+                    opacity:[0,1],
+                    duration:200,
+                    easing:"easeInOutQuad"
+                })
+            })
+        }
+        ExpiredQouta()
+
+    </script>   
+</body>
+</html>
