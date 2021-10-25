@@ -2553,3 +2553,25 @@ title{
     justify-items: center;
     font-size: 12px;
 }
+
+.channel-edit-button  {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.channel-edit-button i {
+    width: 30px !important;
+    display: inline-block;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px !important;
+    border-radius: 50%;
+    background: #63C2DE;
+}
+
+.navigation_top-logo img{
+    width: 300px;
+} 
